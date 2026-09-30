@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #d1d1d1;
+  color: #111;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Reduced motion: show the final state, no animation */
+@media (prefers-reduced-motion: reduce) {
+  .trail, .car-track { transform: none !important; }
+  .ch { color: #111 !important; }
+}
