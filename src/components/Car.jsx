@@ -1,10 +1,10 @@
-export default function Car({ height = "135%" }) {
+// Put your top-view car PNG at public/car.png (nose pointing right).
+export default function Car() {
   return (
     <img
-      src="/car.png"
+      src={import.meta.env.BASE_URL + "car.png"}
       alt="Car driving left to right"
-      className="w-auto max-w-none shrink-0 select-none"
-      style={{ height }}
+      className="block h-auto w-[min(27vw,52vh)] max-w-none select-none"
       draggable="false"
     />
   );
